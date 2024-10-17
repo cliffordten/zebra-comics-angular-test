@@ -1,0 +1,21 @@
+@for $i from 1 through 20 {
+  // border-radius;
+  .rounded-#{$i}rem {
+    border-radius: #{$i}rem;
+  }
+
+  // flex gap
+  .gap-#{$i}rem {
+    gap: #{$i}rem;
+  }
+
+  // font
+  .font-#{$i}rem {
+    font-size: #{$i}rem;
+  }
+
+  // font
+  .height-#{$i}rem {
+    height: #{$i}rem;
+  }
+}

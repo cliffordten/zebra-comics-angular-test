@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./scss/dynamic";
+
 * {
   margin: 0;
   padding: 0;
@@ -25,6 +27,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+button {
+  border: unset;
+  cursor: pointer;
+}
 img,
 picture,
 video,
@@ -39,4 +45,45 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+.container {
+  max-width: 65.625rem;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.rounded-full {
+  border-radius: 50%;
+}
+
+.text-primary {
+  color: #bd0002;
+}
+
+.bg-primary {
+  background: #bd0002;
+}
+
+.width-full {
+  width: 100%;
 }

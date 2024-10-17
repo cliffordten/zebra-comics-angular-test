@@ -1,0 +1,45 @@
+img,
+h1 {
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+ul {
+  li {
+    list-style: none;
+    cursor: pointer;
+    color: #83868f;
+
+    &:hover {
+      color: #bd0002;
+      text-decoration: underline;
+    }
+  }
+}
+
+.user-profile {
+  background: #262626;
+  border-radius: 1.375rem;
+  padding: 0.4rem 1rem;
+  padding-right: 0.4rem;
+  height: 3.125rem;
+  cursor: pointer;
+
+  img {
+    border-radius: 0.8rem;
+  }
+}
+
+.subscribe {
+  background: linear-gradient(268.83deg, #995ebd 0%, #bd5e5f 100%);
+  border-radius: 1.375rem;
+  padding: 0 1.25rem;
+  height: 3.125rem;
+
+  &:hover {
+    background: linear-gradient(268.83deg, #bd5e5f 0%, #995ebd 100%);
+    transition: all 0.3s ease-in-out;
+  }
+}
