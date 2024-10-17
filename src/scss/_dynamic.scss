@@ -1,4 +1,4 @@
-@for $i from 1 through 20 {
+@for $i from 1 through 30 {
   // border-radius;
   .rounded-#{$i}rem {
     border-radius: #{$i}rem;
@@ -14,8 +14,22 @@
     font-size: #{$i}rem;
   }
 
-  // font
+  // height
   .height-#{$i}rem {
     height: #{$i}rem;
+  }
+
+  // width
+  .width-#{$i}rem {
+    width: #{$i}rem;
+  }
+
+  // margin
+  .mt-#{$i}rem {
+    margin-top: #{$i}rem;
+  }
+
+  .mb-#{$i}rem {
+    margin-bottom: #{$i}rem;
   }
 }

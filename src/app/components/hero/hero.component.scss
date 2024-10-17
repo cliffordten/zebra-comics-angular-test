@@ -1,0 +1,36 @@
+.hero {
+  height: 28rem;
+  background-image: url("/hero_bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .hero-content {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, #000000 100%);
+    opacity: 0.9;
+    height: 28rem;
+
+    button {
+      width: 60%;
+      height: 3rem;
+      text-transform: uppercase;
+      min-width: 13rem;
+    }
+
+    .icon {
+      padding: 0.4rem;
+
+      ng-icon {
+        // todo: fix this
+        svg {
+          fill: #535d5d;
+          color: #535d5d;
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

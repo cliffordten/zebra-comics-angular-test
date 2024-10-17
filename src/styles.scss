@@ -64,6 +64,10 @@ select {
   align-items: center;
 }
 
+.justify-end {
+  justify-content: flex-end;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -84,6 +88,18 @@ select {
   background: #bd0002;
 }
 
+.bg-white {
+  background: #ffffff;
+}
+
 .width-full {
   width: 100%;
+}
+
+.height-full {
+  height: 100%;
+}
+
+.text-black {
+  color: #000000;
 }
