@@ -1,18 +1,14 @@
 import { Component } from '@angular/core';
-import { NgIconComponent, provideIcons } from '@ng-icons/core';
-import {
-  matArrowBackIos,
-  matArrowForwardIos,
-} from '@ng-icons/material-icons/baseline';
+
 import { SectionContainerComponent } from '../section-container/section-container.component';
 import { IBook } from '../../models/books';
 import { BookItemComponent } from '../book-item/book-item.component';
+import { IconsComponent } from '../icons/icons.component';
 
 @Component({
   selector: 'app-zebra-kids',
   standalone: true,
-  imports: [NgIconComponent, SectionContainerComponent, BookItemComponent],
-  viewProviders: [provideIcons({ matArrowForwardIos, matArrowBackIos })],
+  imports: [SectionContainerComponent, BookItemComponent, IconsComponent],
   templateUrl: './zebra-kids.component.html',
   styleUrl: './zebra-kids.component.scss',
 })

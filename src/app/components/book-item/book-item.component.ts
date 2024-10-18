@@ -1,14 +1,12 @@
 import { Component, input } from '@angular/core';
 import { IBook } from '../../models/books';
-import { ionHeart } from '@ng-icons/ionicons';
-import { NgIconComponent, provideIcons } from '@ng-icons/core';
 import { NgClass } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { IconsComponent } from '../icons/icons.component';
 @Component({
   selector: 'app-book-item',
   standalone: true,
-  imports: [NgIconComponent, NgClass, RouterLink],
-  viewProviders: [provideIcons({ ionHeart })],
+  imports: [NgClass, RouterLink, IconsComponent],
   templateUrl: './book-item.component.html',
   styleUrl: './book-item.component.scss',
 })

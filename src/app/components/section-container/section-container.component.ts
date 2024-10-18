@@ -1,16 +1,12 @@
 import { NgClass } from '@angular/common';
 import { Component, input } from '@angular/core';
-import { provideIcons, NgIconComponent } from '@ng-icons/core';
-import {
-  matArrowBackIos,
-  matArrowForwardIos,
-} from '@ng-icons/material-icons/baseline';
+
+import { IconsComponent } from '../icons/icons.component';
 
 @Component({
   selector: 'app-section-container',
   standalone: true,
-  imports: [NgIconComponent, NgClass],
-  viewProviders: [provideIcons({ matArrowForwardIos, matArrowBackIos })],
+  imports: [NgClass, IconsComponent],
   templateUrl: './section-container.component.html',
   styleUrl: './section-container.component.scss',
 })
