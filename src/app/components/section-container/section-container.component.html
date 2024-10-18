@@ -1,7 +1,7 @@
 <div class="container">
     <h2 class="font-125rem pt-2rem pb-50rem">{{ title() }}</h2>
     <div class="flex gap-1rem">
-        <div class="flex gap-1rem items-center">
+        <div class="flex gap-1rem items-center overflow-horizontal">
             <ng-content />
         </div>
         <div [ngClass]="['cursor-pointer p-50rem flex items-center', iconContainerClass()]">

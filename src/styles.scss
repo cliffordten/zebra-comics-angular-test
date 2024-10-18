@@ -127,3 +127,20 @@ select {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.overflow-horizontal {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding: 0 1rem;
+
+  & > * {
+    display: inline-block;
+  }
+}

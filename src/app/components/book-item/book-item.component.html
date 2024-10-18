@@ -9,7 +9,8 @@
         </div>
     </div>
     <div class="mt-50rem">
-        <h3 class="font-1rem text-grey">{{ bookItem().title }}</h3>
-        <p class="font-1rem text-grey">{{ bookItem().currentEpisode }}</p>
+        <h3 class="font-1rem text-grey text-ellipsis width-10rem" [title]="bookItem().title">{{ bookItem().title }}</h3>
+        <p class="font-1rem text-grey text-ellipsis width-10rem" [title]="bookItem().currentEpisode">{{
+            bookItem().currentEpisode }}</p>
     </div>
 </div>

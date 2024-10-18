@@ -3,7 +3,9 @@
 </section>
 <section>
     <app-section-container title="Last Read" iconContainerClass="height-7rem">
-        <app-book-item />
+        @for (book of books ; track $index) {
+        <app-book-item [bookItem]="book" />
+        }
     </app-section-container>
 </section>
 <p>home works!</p>
