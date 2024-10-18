@@ -15,6 +15,6 @@ import {
   styleUrl: './section-container.component.scss',
 })
 export class SectionContainerComponent {
-  title = input.required<string>();
+  heading = input.required<string>();
   iconContainerClass = input.required<string>();
 }

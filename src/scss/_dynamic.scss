@@ -1,9 +1,4 @@
 @for $i from 1 through 30 {
-  // flex gap
-  .gap-#{$i}rem {
-    gap: #{$i}rem;
-  }
-
   // height
   .height-#{$i}rem {
     height: #{$i}rem;
@@ -12,6 +7,11 @@
   // width
   .width-#{$i}rem {
     width: #{$i}rem;
+  }
+
+  // width
+  .max-width-#{$i}rem {
+    max-width: #{$i}rem;
   }
 }
 
@@ -35,6 +35,11 @@ $increment: 0.25; // Increment size in rem
     border-radius: #{$size}rem;
   }
 
+  // flex gap
+  .gap-#{$classname}rem {
+    gap: #{$size}rem;
+  }
+
   // font-size
   .font-#{$classname}rem {
     font-size: #{$size}rem;
@@ -49,6 +54,10 @@ $increment: 0.25; // Increment size in rem
     margin-bottom: #{$size}rem;
   }
 
+  .mr-#{$classname}rem {
+    margin-right: #{$size}rem;
+  }
+
   // padding
   .pt-#{$classname}rem {
     padding-top: #{$size}rem;
@@ -60,5 +69,15 @@ $increment: 0.25; // Increment size in rem
 
   .p-#{$classname}rem {
     padding: #{$size}rem;
+  }
+
+  .px-#{$classname}rem {
+    padding-left: #{$size}rem;
+    padding-right: #{$size}rem;
+  }
+
+  .py-#{$classname}rem {
+    padding-top: #{$size}rem;
+    padding-bottom: #{$size}rem;
   }
 }

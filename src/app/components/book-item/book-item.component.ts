@@ -1,10 +1,12 @@
 import { Component, input } from '@angular/core';
 import { IBook } from '../../models/books';
-
+import { ionHeart } from '@ng-icons/ionicons';
+import { NgIconComponent, provideIcons } from '@ng-icons/core';
 @Component({
   selector: 'app-book-item',
   standalone: true,
-  imports: [],
+  imports: [NgIconComponent],
+  viewProviders: [provideIcons({ ionHeart })],
   templateUrl: './book-item.component.html',
   styleUrl: './book-item.component.scss',
 })
@@ -15,4 +17,5 @@ export class BookItemComponent {
     cover: '/book_1.png',
     progressRead: 10,
   });
+  bookItemType = input<'LAST_READ' | 'START_HERE'>('LAST_READ');
 }

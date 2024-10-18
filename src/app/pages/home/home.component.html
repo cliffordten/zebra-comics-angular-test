@@ -2,9 +2,16 @@
     <app-hero />
 </section>
 <section>
-    <app-section-container title="Last Read" iconContainerClass="height-7rem">
-        @for (book of books ; track $index) {
+    <app-section-container heading="Last Read" iconContainerClass="height-7rem">
+        @for (book of lastRead; track $index) {
         <app-book-item [bookItem]="book" />
+        }
+    </app-section-container>
+</section>
+<section>
+    <app-section-container heading="Start Here" iconContainerClass="height-18rem">
+        @for (book of startHere; track $index) {
+        <app-book-item [bookItem]="book" bookItemType="START_HERE" />
         }
     </app-section-container>
 </section>

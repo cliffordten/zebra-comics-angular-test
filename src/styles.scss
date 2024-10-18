@@ -72,6 +72,10 @@ select {
   justify-content: space-between;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -98,6 +102,10 @@ select {
 
 .bg-grey {
   background: #808080;
+}
+
+.bg-dark-grey {
+  background: #28292e;
 }
 
 .text-grey {
@@ -144,3 +152,21 @@ select {
     display: inline-block;
   }
 }
+
+.width-fit {
+  width: fit-content;
+}
+
+// .ellipsis-text {
+//     display: -webkit-box;
+//     line-clamp: 3;
+//     -webkit-line-clamp: 3;
+//     -webkit-box-orient: vertical;
+//     overflow: hidden;
+//     text-overflow: ellipsis;
+
+//     /* Fallback for non-WebKit browsers */
+//     display: block;
+//     max-height: 4.5em; /* Adjust based on your font size and line height */
+//     line-height: 1.5em;
+//   }
