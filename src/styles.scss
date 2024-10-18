@@ -16,10 +16,7 @@ html,
 body {
   height: 100%;
   background-color: #000000;
-
-  * {
-    color: #fff;
-  }
+  color: #fff;
 }
 
 body {
@@ -170,3 +167,16 @@ select {
 //     max-height: 4.5em; /* Adjust based on your font size and line height */
 //     line-height: 1.5em;
 //   }
+
+.line-height {
+  line-height: 1.4rem;
+}
+
+.disabled {
+  fill: #535d5d;
+  color: #535d5d;
+}
+
+.bold {
+  font-weight: bold;
+}

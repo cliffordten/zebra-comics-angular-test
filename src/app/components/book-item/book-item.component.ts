@@ -19,5 +19,5 @@ export class BookItemComponent {
     progressRead: 10,
   });
   bookItemType = input<'LAST_READ' | 'START_HERE'>('LAST_READ');
-  bookContainerClass = input<string>();
+  bookContainerClass = input<string>('');
 }

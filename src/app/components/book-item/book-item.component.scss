@@ -33,3 +33,18 @@
   text-wrap: wrap;
   line-height: 1.4rem;
 }
+
+.py-05rem {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+}
+
+.bg-shadow {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.5) 30%,
+    rgba(0, 0, 0, 0.1) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}

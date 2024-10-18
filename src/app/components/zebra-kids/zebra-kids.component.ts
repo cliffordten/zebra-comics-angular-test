@@ -1,73 +1,27 @@
 import { Component } from '@angular/core';
-import { HeroComponent } from '../../components/hero/hero.component';
-import { SectionContainerComponent } from '../../components/section-container/section-container.component';
-import { BookItemComponent } from '../../components/book-item/book-item.component';
+import { NgIconComponent, provideIcons } from '@ng-icons/core';
+import {
+  matArrowBackIos,
+  matArrowForwardIos,
+} from '@ng-icons/material-icons/baseline';
+import { SectionContainerComponent } from '../section-container/section-container.component';
 import { IBook } from '../../models/books';
-import { ZebraKidsComponent } from '../../components/zebra-kids/zebra-kids.component';
+import { BookItemComponent } from '../book-item/book-item.component';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-zebra-kids',
   standalone: true,
-  imports: [
-    HeroComponent,
-    SectionContainerComponent,
-    BookItemComponent,
-    ZebraKidsComponent,
-  ],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.scss',
+  imports: [NgIconComponent, SectionContainerComponent, BookItemComponent],
+  viewProviders: [provideIcons({ matArrowForwardIos, matArrowBackIos })],
+  templateUrl: './zebra-kids.component.html',
+  styleUrl: './zebra-kids.component.scss',
 })
-export class HomeComponent {
-  lastRead: IBook[] = [
+export class ZebraKidsComponent {
+  zebraKids: IBook[] = [
     {
       title: 'Touch and Follow Iron man',
       currentEpisode: 'Episode 7',
-      cover: '/book_1.png',
-      progressRead: 10,
-    },
-    {
-      title: 'Kepnee and Tanka',
-      currentEpisode: 'Episode 1',
-      cover: '/book_2.png',
-      progressRead: 30,
-    },
-    {
-      title: 'Minuu and the Five Lions',
-      currentEpisode: 'Episode 3',
-      cover: '/book_3.png',
-      progressRead: 5,
-    },
-    {
-      title: 'Ten of Hearts',
-      currentEpisode: 'Episode 1',
-      cover: '/book_4.png',
-      progressRead: 55,
-    },
-    {
-      title: 'Kepnee and the Crocodile',
-      currentEpisode: 'Episode 4',
-      cover: '/book_1.png',
-      progressRead: 25,
-    },
-    {
-      title: 'Super Soldier',
-      currentEpisode: 'Episode 15',
-      cover: '/book_2.png',
-      progressRead: 60,
-    },
-    {
-      title: 'The Walking Dead',
-      currentEpisode: 'Episode 8',
-      cover: '/book_3.png',
-      progressRead: 10,
-    },
-  ];
-
-  startHere: IBook[] = [
-    {
-      title: 'Touch and Follow Iron man',
-      currentEpisode: 'Episode 7',
-      cover: '/book_1.png',
+      cover: '/book_5.png',
       progressRead: 10,
       tags: ['Action', 'Adventure', 'Fantasy', 'Science fiction'],
       nLikes: 10,
@@ -78,7 +32,7 @@ export class HomeComponent {
     {
       title: 'Kepnee and Tanka',
       currentEpisode: 'Episode 1',
-      cover: '/book_2.png',
+      cover: '/book_6.png',
       progressRead: 30,
       tags: ['Action', 'Adventure', 'Fantasy', 'Science fiction'],
       nLikes: 10,
@@ -89,7 +43,7 @@ export class HomeComponent {
     {
       title: 'Minuu and the Five Lions',
       currentEpisode: 'Episode 3',
-      cover: '/book_3.png',
+      cover: '/book_7.png',
       progressRead: 5,
       tags: ['Action', 'Adventure', 'Fantasy', 'Science fiction'],
       nLikes: 10,
