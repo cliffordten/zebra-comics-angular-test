@@ -25,4 +25,11 @@
         }
     </app-section-container>
 </section>
+<section class="container">
+    <app-section-container heading="Trending Today" iconContainerClass="height-22rem" [leftIcon]="true">
+        @for (book of trendingToday; track $index) {
+        <app-trending-item [bookItem]="book" />
+        }
+    </app-section-container>
+</section>
 <p>home works!</p>

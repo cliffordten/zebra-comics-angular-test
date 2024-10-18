@@ -20,4 +20,5 @@ export class BookItemComponent {
   });
   bookItemType = input<'LAST_READ' | 'START_HERE'>('LAST_READ');
   bookContainerClass = input<string>('');
+  removeDescription = input<boolean>(false);
 }

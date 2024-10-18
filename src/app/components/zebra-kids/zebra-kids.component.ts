@@ -24,7 +24,7 @@ export class ZebraKidsComponent {
       cover: '/book_5.png',
       progressRead: 10,
       tags: ['Action', 'Adventure', 'Fantasy', 'Science fiction'],
-      nLikes: 10,
+      nLikes: '10M',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       isNewEpisode: true,
@@ -35,7 +35,7 @@ export class ZebraKidsComponent {
       cover: '/book_6.png',
       progressRead: 30,
       tags: ['Action', 'Adventure', 'Fantasy', 'Science fiction'],
-      nLikes: 10,
+      nLikes: '10M',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       isNewEpisode: false,
@@ -46,7 +46,7 @@ export class ZebraKidsComponent {
       cover: '/book_7.png',
       progressRead: 5,
       tags: ['Action', 'Adventure', 'Fantasy', 'Science fiction'],
-      nLikes: 10,
+      nLikes: '10M',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       isNewEpisode: false,
@@ -57,7 +57,7 @@ export class ZebraKidsComponent {
       cover: '/book_4.png',
       progressRead: 55,
       tags: ['Action', 'Adventure', 'Fantasy', 'Science fiction'],
-      nLikes: 10,
+      nLikes: '10M',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       isNewEpisode: true,
@@ -68,7 +68,7 @@ export class ZebraKidsComponent {
       cover: '/book_1.png',
       progressRead: 25,
       tags: ['Action', 'Adventure', 'Fantasy', 'Science fiction'],
-      nLikes: 10,
+      nLikes: '10M',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       isNewEpisode: false,
@@ -79,7 +79,7 @@ export class ZebraKidsComponent {
       cover: '/book_2.png',
       progressRead: 60,
       tags: ['Action', 'Adventure', 'Fantasy', 'Science fiction'],
-      nLikes: 10,
+      nLikes: '10M',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       isNewEpisode: true,
@@ -90,7 +90,7 @@ export class ZebraKidsComponent {
       cover: '/book_3.png',
       progressRead: 10,
       tags: ['Action', 'Adventure', 'Fantasy', 'Science fiction'],
-      nLikes: 10,
+      nLikes: '10M',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       isNewEpisode: true,

@@ -4,7 +4,14 @@ export interface IBook {
   cover?: string;
   progressRead: number;
   isNewEpisode?: boolean;
-  nLikes?: number;
+  nLikes?: string;
   description?: string;
   tags?: string[];
+}
+
+export interface IEpisode {
+  title: string;
+  genre: string;
+  episodeNumber: string;
+  nViews: string;
 }
