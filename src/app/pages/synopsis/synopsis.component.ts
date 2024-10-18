@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import { IBook, IEpisode } from '../../models/books';
 import { SynopsisHeroComponent } from '../../components/synopsis-hero/synopsis-hero.component';
+import { EpisodeItemComponent } from '../../components/episode-item/episode-item.component';
+import { IconsComponent } from '../../components/icons/icons.component';
 
 @Component({
   selector: 'app-synopsis',
   standalone: true,
-  imports: [SynopsisHeroComponent],
+  imports: [SynopsisHeroComponent, EpisodeItemComponent, IconsComponent],
   templateUrl: './synopsis.component.html',
   styleUrl: './synopsis.component.scss',
 })
@@ -27,12 +29,14 @@ export class SynopsisComponent {
       title: 'Episode 1',
       genre: 'Fantasy',
       episodeNumber: '1',
+      cover: '/book_1.png',
       nViews: '18K',
       date: 'Jan 25, 2023',
     },
     {
       title: 'Episode 2',
       genre: 'Fantasy',
+      cover: '/book_2.png',
       episodeNumber: '2',
       nViews: '18K',
       date: 'Jan 25, 2023',
@@ -40,6 +44,7 @@ export class SynopsisComponent {
     {
       title: 'Episode 3',
       genre: 'Fantasy',
+      cover: '/book_3.png',
       episodeNumber: '3',
       nViews: '18K',
       date: 'Jan 25, 2023',
@@ -47,6 +52,7 @@ export class SynopsisComponent {
     {
       title: 'Episode 4',
       genre: 'Fantasy',
+      cover: '/book_4.png',
       episodeNumber: '4',
       nViews: '18K',
       date: 'Jan 25, 2023',
@@ -54,6 +60,7 @@ export class SynopsisComponent {
     {
       title: 'Episode 5',
       genre: 'Fantasy',
+      cover: '/book_5.png',
       episodeNumber: '5',
       nViews: '18K',
       date: 'Jan 25, 2023',
@@ -61,6 +68,7 @@ export class SynopsisComponent {
     {
       title: 'Episode 6',
       genre: 'Fantasy',
+      cover: '/book_6.png',
       episodeNumber: '6',
       nViews: '18K',
       date: 'Jan 25, 2023',

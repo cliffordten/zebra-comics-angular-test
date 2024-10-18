@@ -1,0 +1,11 @@
+<div class="height-7rem rounded-2rem width-full bg-dark-dim flex items-center gap-1rem">
+    <div class="height-full width-7rem bg-white-light episode-image">
+        <img [src]="episodeItem()?.cover" alt="episode image" class="width-full height-full episode-image">
+    </div>
+    <div class="flex flex-col gap-1rem">
+        <p class="font-1rem">{{episodeItem()?.title}}</p>
+        @if (episodeItem()?.date) {
+        <p class="font-1rem text-grey">{{episodeItem()?.date}}</p>
+        }
+    </div>
+</div>

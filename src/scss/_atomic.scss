@@ -108,12 +108,20 @@ select {
   background: #28292e;
 }
 
+.bg-dark-dim {
+  background: #121212;
+}
+
 .bg-dark {
   background: #000000;
 }
 
 .text-grey {
   color: #83868f;
+}
+
+.bg-white-light {
+  background: #d9d9d9;
 }
 
 .width-full {
@@ -159,20 +167,6 @@ select {
 .width-fit {
   width: fit-content;
 }
-
-// .ellipsis-text {
-//     display: -webkit-box;
-//     line-clamp: 3;
-//     -webkit-line-clamp: 3;
-//     -webkit-box-orient: vertical;
-//     overflow: hidden;
-//     text-overflow: ellipsis;
-
-//     /* Fallback for non-WebKit browsers */
-//     display: block;
-//     max-height: 4.5em; /* Adjust based on your font size and line height */
-//     line-height: 1.5em;
-//   }
 
 .line-height {
   line-height: 1.4rem;

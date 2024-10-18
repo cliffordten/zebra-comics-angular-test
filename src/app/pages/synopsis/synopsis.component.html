@@ -1,3 +1,20 @@
 <section>
     <app-synopsis-hero [bookDetails]="bookDetails" />
 </section>
+
+<section class="container">
+    <div class="flex justify-between items-center">
+        <h2 class="font-125rem pb-50rem">Episodes</h2>
+        <div class="flex gap-25rem items-center justify-center width-fit">
+            <p class="text-grey font-1rem">Sort</p>
+            <app-icons name="matImportExport" className="font-150rem text-grey" />
+        </div>
+    </div>
+    <div class="flex gap-75rem mt-50rem episode-item-container">
+        @for (episode of bookEpisodes; track $index) {
+        <div class="episode-item">
+            <app-episode-item [episodeItem]="episode" />
+        </div>
+        }
+    </div>
+</section>

@@ -14,6 +14,7 @@ export interface IEpisode {
   title: string;
   genre: string;
   episodeNumber: string;
+  cover?: string;
   nViews: string;
   date?: string;
 }
