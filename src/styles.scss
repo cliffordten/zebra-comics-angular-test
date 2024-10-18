@@ -27,6 +27,7 @@ body {
 button {
   border: unset;
   cursor: pointer;
+  color: #ffffff;
 }
 img,
 picture,
@@ -63,6 +64,10 @@ select {
 
 .justify-end {
   justify-content: flex-end;
+}
+
+.items-end {
+  align-items: flex-end;
 }
 
 .justify-between {

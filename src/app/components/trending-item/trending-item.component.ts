@@ -1,11 +1,12 @@
 import { Component, input } from '@angular/core';
 import { IBook, IEpisode } from '../../models/books';
 import { BookItemComponent } from '../book-item/book-item.component';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-trending-item',
   standalone: true,
-  imports: [BookItemComponent],
+  imports: [BookItemComponent, NgClass],
   templateUrl: './trending-item.component.html',
   styleUrl: './trending-item.component.scss',
 })
@@ -27,4 +28,5 @@ export class TrendingItemComponent {
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
     isNewEpisode: true,
   });
+  isExpanded = input<boolean>(false);
 }
