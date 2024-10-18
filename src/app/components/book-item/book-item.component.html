@@ -1,0 +1,15 @@
+<div class="cursor-pointer">
+    <div class="width-10rem height-7rem rounded-75rem bg-grey bg-cover"
+        [style.background-image]="bookItem().cover? 'url(' + bookItem().cover + ')': ''">
+        <div class="flex flex-col justify-end width-full height-full pb-25rem">
+            <div class="bg-progress rounded-1rem">
+                <div class="bg-white rounded-1rem" [style.width.%]="bookItem().progressRead" style="height: 0.4rem;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-50rem">
+        <h3 class="font-1rem text-grey">{{ bookItem().title }}</h3>
+        <p class="font-1rem text-grey">{{ bookItem().currentEpisode }}</p>
+    </div>
+</div>

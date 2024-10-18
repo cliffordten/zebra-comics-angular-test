@@ -92,6 +92,18 @@ select {
   background: #ffffff;
 }
 
+.bg-progress {
+  background: #ffffff59;
+}
+
+.bg-grey {
+  background: #808080;
+}
+
+.text-grey {
+  color: #83868f;
+}
+
 .width-full {
   width: 100%;
 }
@@ -108,4 +120,10 @@ select {
   &:hover {
     cursor: pointer;
   }
+}
+
+.bg-cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }

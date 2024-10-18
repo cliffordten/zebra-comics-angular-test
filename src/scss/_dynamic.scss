@@ -1,9 +1,4 @@
 @for $i from 1 through 30 {
-  // border-radius;
-  .rounded-#{$i}rem {
-    border-radius: #{$i}rem;
-  }
-
   // flex gap
   .gap-#{$i}rem {
     gap: #{$i}rem;
@@ -35,6 +30,12 @@ $increment: 0.25; // Increment size in rem
   $size: $i * $increment;
   $classname: format-classname($size);
 
+  // border-radius;
+  .rounded-#{$classname}rem {
+    border-radius: #{$size}rem;
+  }
+
+  // font-size
   .font-#{$classname}rem {
     font-size: #{$size}rem;
   }

@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { provideIcons, NgIconComponent } from '@ng-icons/core';
-import { matArrowBackIos, matArrowForwardIos } from '@ng-icons/material-icons/baseline';
+import {
+  matArrowBackIos,
+  matArrowForwardIos,
+} from '@ng-icons/material-icons/baseline';
 
 @Component({
   selector: 'app-hero',
@@ -8,8 +11,6 @@ import { matArrowBackIos, matArrowForwardIos } from '@ng-icons/material-icons/ba
   imports: [NgIconComponent],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss',
-  viewProviders: [provideIcons({ matArrowForwardIos, matArrowBackIos })]
+  viewProviders: [provideIcons({ matArrowForwardIos, matArrowBackIos })],
 })
-export class HeroComponent {
-
-}
+export class HeroComponent {}

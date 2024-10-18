@@ -1,10 +1,10 @@
 <div class="container">
-    <h2 class="font-125rem pt-2rem pb-25rem">{{ title() }}</h2>
-    <div class="flex gap-1rem items-center">
+    <h2 class="font-125rem pt-2rem pb-50rem">{{ title() }}</h2>
+    <div class="flex gap-1rem">
         <div class="flex gap-1rem items-center">
             <ng-content />
         </div>
-        <div class="cursor-pointer p-50rem flex items-center justify-center">
+        <div [ngClass]="['cursor-pointer p-50rem flex items-center', iconContainerClass()]">
             <ng-icon name="matArrowForwardIos" />
         </div>
     </div>
