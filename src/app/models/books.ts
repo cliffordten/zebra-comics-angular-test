@@ -7,6 +7,7 @@ export interface IBook {
   nLikes?: string;
   description?: string;
   tags?: string[];
+  nViews?: string;
 }
 
 export interface IEpisode {
@@ -14,6 +15,7 @@ export interface IEpisode {
   genre: string;
   episodeNumber: string;
   nViews: string;
+  date?: string;
 }
 
 export interface ITrending {

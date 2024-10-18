@@ -1,0 +1,47 @@
+<div class="hero-content">
+    <div class="container flex gap-125rem items-center pt-2rem">
+        <img [src]="bookDetails().cover" alt="comic image" class="width-15rem height-22rem rounded-1rem">
+        <div class="flex flex-col gap-125rem">
+            <h3 class="font-2rem bold">{{bookDetails().title}}</h3>
+            <div class="flex items-center gap-1rem">
+                <div class="flex gap-50rem items-center justify-center width-fit">
+                    <app-icons name="ionEye" />
+                    <p>{{bookDetails().nViews}}</p>
+                </div>
+                <div class="flex gap-50rem items-center justify-center width-fit">
+                    <app-icons name="ionHeart" />
+                    <p>{{bookDetails().nLikes}}</p>
+                </div>
+                @if (bookDetails().tags) {
+                <div class="flex items-center flex-wrap gap-50rem">
+                    @for (tag of bookDetails().tags; track tag) {
+                    <p class="font-75rem text-white text-ellipsis bg-dark-grey px-50rem rounded-50rem max-width-10rem py-25rem"
+                        [title]="tag">{{ tag }}</p>
+                    }
+                </div>
+                }
+            </div>
+            <p class="font-1rem text-grey">{{bookDetails().description}}</p>
+            <div class="flex items-center gap-175rem">
+                <button class="rounded-1rem bg-white text-black">First episode</button>
+                <div class="flex items-center gap-1rem">
+                    <div class="p-50rem cursor-pointer flex items-center justify-center">
+                        <app-icons name="ionHeartOutline" className="font-150rem" />
+                    </div>
+                    <div class="p-50rem cursor-pointer flex items-center justify-center">
+                        <app-icons name="ionBookmarkOutline" className="font-150rem" />
+                    </div>
+                    <div class="p-50rem cursor-pointer flex items-center justify-center">
+                        <app-icons name="ionNotificationsOutline" className="font-150rem" />
+                    </div>
+                    <div class="p-50rem cursor-pointer flex items-center justify-center">
+                        <app-icons name="heroArrowDownTray" className="font-150rem" />
+                    </div>
+                    <div class="p-50rem cursor-pointer flex items-center justify-center">
+                        <app-icons name="matLaunch" className="font-150rem" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

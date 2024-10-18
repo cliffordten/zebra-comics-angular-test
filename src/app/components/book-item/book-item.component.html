@@ -40,7 +40,7 @@
             @if (bookItem().tags) {
             <div class="flex items-center flex-wrap gap-50rem">
                 @for (tag of bookItem().tags; track tag) {
-                <p class="font-75rem text-white text-ellipsis bg-dark-grey px-50rem rounded-50rem max-width-10rem"
+                <p class="font-75rem text-white text-ellipsis bg-dark-grey px-50rem rounded-50rem max-width-10rem py-25rem"
                     [title]="tag">{{ tag }}</p>
                 }
             </div>
