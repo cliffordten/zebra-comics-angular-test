@@ -12,10 +12,11 @@ export interface IBook {
 
 export interface IEpisode {
   title: string;
-  genre: string;
-  episodeNumber: string;
+  genre?: string;
+  episodeNumber?: string;
   cover?: string;
-  nViews: string;
+  nViews?: string;
+  nMoreEpisode?: string;
   date?: string;
 }
 

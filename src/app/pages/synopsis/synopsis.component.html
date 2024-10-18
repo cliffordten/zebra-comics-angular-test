@@ -13,8 +13,25 @@
     <div class="flex gap-75rem mt-50rem episode-item-container">
         @for (episode of bookEpisodes; track $index) {
         <div class="episode-item">
+            @if(bookEpisodes.length > 6){
+            @if ($index < 5) { <div class="episode-item">
+                <app-episode-item [episodeItem]="episode" />
+        </div>
+        } @else if ($index === 5) {
+        <div class="episode-item">
+            <app-episode-item [episodeItem]="{
+                title: 'View All Episodes',
+                cover: episode.cover,
+                nMoreEpisode: (bookEpisodes.length - 6).toString()
+              }" />
+        </div>
+        }
+        }@else {
+        <div class="episode-item">
             <app-episode-item [episodeItem]="episode" />
         </div>
         }
+    </div>
+    }
     </div>
 </section>
