@@ -19,7 +19,7 @@
 }
 @case ('START_HERE') {
 <div class="cursor-pointer">
-    <div class="width-12rem height-18rem rounded-75rem bg-grey bg-cover book-item"
+    <div (ngClass)="['width-12rem height-18rem rounded-75rem bg-grey bg-cover book-item', bookContainerClass]"
         [style.background-image]="bookItem().cover? 'url(' + bookItem().cover + ')': ''">
         <div class="flex flex-col justify-end width-full height-full pb-25rem rounded-50rem px-50rem">
             <div class="flex items-center gap-50rem">
