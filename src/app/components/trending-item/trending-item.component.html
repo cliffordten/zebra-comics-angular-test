@@ -3,11 +3,10 @@
         <app-book-item [bookItem]=" bookItem()" bookItemType="START_HERE" bookContainerClass="width-10rem height-15rem"
             [removeDescription]="true" />
         <div class="width-14rem height-15rem px-75rem py-50rem pt-1rem">
-            <h3 class="font-4rem py-2 bold font-advent">{{trendingItem().episodeNumber}}</h3>
-            <p class="mb-25rem">New Release • {{trendingItem().genre}}</p>
-            <p class="text-grey font-75rem mb-75rem">{{trendingItem().title}}</p>
-            <p class="text-grey font-75rem">{{trendingItem().nViews}} Views</p>
+            <h3 class="font-4rem py-2 bold font-advent">{{episode().episodeNumber}}</h3>
+            <p class="mb-25rem">New Release • {{episode().genre}}</p>
+            <p class="text-grey font-75rem mb-75rem">{{episode().title}}</p>
+            <p class="text-grey font-75rem">{{episode().nViews}} Views</p>
         </div>
-
     </div>
 </div>

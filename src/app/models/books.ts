@@ -15,3 +15,9 @@ export interface IEpisode {
   episodeNumber: string;
   nViews: string;
 }
+
+export interface ITrending {
+  book: IBook;
+  episode: IEpisode;
+  isExpanded?: boolean;
+}

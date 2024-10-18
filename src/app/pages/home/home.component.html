@@ -26,9 +26,9 @@
     </app-section-container>
 </section>
 <section class="container">
-    <app-section-container heading="Trending Today" iconContainerClass="height-22rem" [leftIcon]="true">
-        @for (book of trendingToday; track $index) {
-        <app-trending-item [bookItem]="book" />
+    <app-section-container heading="Trending Today" iconContainerClass="height-22rem">
+        @for (trendingItem of trendingToday; track $index) {
+        <app-trending-item [bookItem]="trendingItem.book" [episode]="trendingItem.episode" />
         }
     </app-section-container>
 </section>

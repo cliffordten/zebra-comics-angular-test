@@ -10,7 +10,7 @@ import { BookItemComponent } from '../book-item/book-item.component';
   styleUrl: './trending-item.component.scss',
 })
 export class TrendingItemComponent {
-  trendingItem = input<IEpisode>({
+  episode = input<IEpisode>({
     title: 'The Walking Dead',
     genre: 'Action',
     episodeNumber: '01',
