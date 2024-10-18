@@ -80,4 +80,8 @@ $increment: 0.25; // Increment size in rem
     padding-top: #{$size}rem;
     padding-bottom: #{$size}rem;
   }
+
+  .-left-#{$classname}rem {
+    left: -#{$size}rem;
+  }
 }

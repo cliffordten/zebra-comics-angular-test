@@ -143,7 +143,6 @@ select {
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
-  padding: 0 1rem;
 
   & > * {
     display: inline-block;
@@ -179,4 +178,12 @@ select {
 
 .bold {
   font-weight: bold;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
 }

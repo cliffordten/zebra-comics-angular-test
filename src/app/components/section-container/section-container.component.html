@@ -2,9 +2,10 @@
     @if(heading()){
     <h2 class="font-125rem pt-2rem pb-50rem">{{ heading() }}</h2>
     }
-    <div class="flex gap-1rem">
+    <div class="flex gap-1rem relative">
         @if(leftIcon()){
-        <div [ngClass]="['cursor-pointer p-50rem flex items-center', iconContainerClass()]">
+        <div
+            [ngClass]="['cursor-pointer p-50rem flex items-center height-full absolute -left-3rem', iconContainerClass()]">
             <ng-icon name="matArrowBackIos" />
         </div>
         }

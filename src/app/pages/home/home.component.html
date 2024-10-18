@@ -18,4 +18,11 @@
 <section class="container">
     <app-zebra-kids />
 </section>
+<section class="container">
+    <app-section-container heading="Zebra Original" iconContainerClass="height-22rem" [leftIcon]="true">
+        @for (book of startHere; track $index) {
+        <app-book-item [bookItem]="book" bookItemType="START_HERE" bookContainerClass="width-15rem height-22rem" />
+        }
+    </app-section-container>
+</section>
 <p>home works!</p>
