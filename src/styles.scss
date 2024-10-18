@@ -103,3 +103,9 @@ select {
 .text-black {
   color: #000000;
 }
+
+.cursor-pointer {
+  &:hover {
+    cursor: pointer;
+  }
+}

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { provideIcons, NgIconComponent } from '@ng-icons/core';
-import {  matArrowBackIos, matArrowForwardIos } from '@ng-icons/material-icons/baseline';
+import { matArrowBackIos, matArrowForwardIos } from '@ng-icons/material-icons/baseline';
+
 @Component({
   selector: 'app-hero',
   standalone: true,

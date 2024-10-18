@@ -16,21 +16,13 @@
       text-transform: uppercase;
       min-width: 13rem;
     }
+  }
 
-    .icon {
-      padding: 0.4rem;
-
-      ng-icon {
-        // todo: fix this
-        svg {
-          fill: #535d5d;
-          color: #535d5d;
-        }
-      }
-
-      &:hover {
-        cursor: pointer;
-      }
+  ng-icon {
+    // todo: fix this
+    svg {
+      fill: #535d5d;
+      color: #535d5d;
     }
   }
 }
