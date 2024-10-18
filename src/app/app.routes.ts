@@ -7,4 +7,12 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./pages/home/home.component').then((m) => m.HomeComponent),
   },
+  {
+    path: 'synopsis/:id',
+    pathMatch: 'full',
+    loadComponent: () =>
+      import('./pages/synopsis/synopsis.component').then(
+        (m) => m.SynopsisComponent
+      ),
+  },
 ];
