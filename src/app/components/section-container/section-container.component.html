@@ -9,8 +9,11 @@
             <app-icons name="matArrowBackIos" />
         </div>
         }
-        <div class="flex gap-1rem items-center overflow-horizontal">
-            <ng-content />
+        <div infiniteSlider itemWidth="10rem" class="animation-container" containerClass="slider-container"
+            itemClass="slider-item" [shouldAnimate]="shouldAnimate()" [slideLength]="slideLength()">
+            <div class="flex gap-1rem items-center overflow-horizontal slider-container">
+                <ng-content />
+            </div>
         </div>
         <div [ngClass]="['cursor-pointer hide-mobile p-50rem flex items-center', iconContainerClass()]">
             <app-icons name="matArrowForwardIos" />

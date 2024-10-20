@@ -2,9 +2,10 @@
     <app-hero />
 </section>
 <section class="container">
-    <app-section-container heading="Last Read" iconContainerClass="height-7rem">
+    <app-section-container heading="Last Read" iconContainerClass="height-7rem" [shouldAnimate]="true"
+        slideLength="11rem">
         @for (book of lastRead; track $index) {
-        <app-book-item [bookItem]="book" />
+        <app-book-item [bookItem]="book" class="slider-item" />
         }
     </app-section-container>
 </section>
