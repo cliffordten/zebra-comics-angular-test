@@ -28,19 +28,19 @@ export class HomeComponent {
     {
       title: 'Touch and Follow Iron man',
       currentEpisode: 'Episode 7',
-      cover: '/book_1.png',
+      // cover: '/book_1.png',
       progressRead: 10,
     },
     {
       title: 'Kepnee and Tanka',
       currentEpisode: 'Episode 1',
-      cover: '/book_2.png',
+      // cover: '/book_2.png',
       progressRead: 30,
     },
     {
       title: 'Minuu and the Five Lions',
       currentEpisode: 'Episode 3',
-      cover: '/book_3.png',
+      // cover: '/book_3.png',
       progressRead: 5,
     },
     {
