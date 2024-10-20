@@ -2,3 +2,17 @@
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
 }
+
+@media (max-width: 50rem) {
+  .episode-container-item {
+    height: 5rem;
+
+    .gap-1rem {
+      gap: 0.5rem;
+    }
+  }
+
+  .episode-image {
+    width: 5rem;
+  }
+}
