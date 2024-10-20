@@ -12,7 +12,7 @@
     </div>
     <div class="flex gap-75rem mt-50rem episode-item-container">
         @for (episode of bookEpisodes; track $index) {
-        <div class="episode-item">
+        <div class="episode-item" slideHorizontal>
             @if(bookEpisodes.length > 6){
             @if ($index < 5) { <div class="episode-item">
                 <app-episode-item [episodeItem]="episode" />

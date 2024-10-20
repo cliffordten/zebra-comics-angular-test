@@ -3,11 +3,17 @@ import { IBook, IEpisode } from '../../models/books';
 import { SynopsisHeroComponent } from '../../components/synopsis-hero/synopsis-hero.component';
 import { EpisodeItemComponent } from '../../components/episode-item/episode-item.component';
 import { IconsComponent } from '../../components/icons/icons.component';
+import { HorizontalSlideDirective } from '../../directives/slide-horizontal.directive';
 
 @Component({
   selector: 'app-synopsis',
   standalone: true,
-  imports: [SynopsisHeroComponent, EpisodeItemComponent, IconsComponent],
+  imports: [
+    SynopsisHeroComponent,
+    EpisodeItemComponent,
+    IconsComponent,
+    HorizontalSlideDirective,
+  ],
   templateUrl: './synopsis.component.html',
   styleUrl: './synopsis.component.scss',
 })

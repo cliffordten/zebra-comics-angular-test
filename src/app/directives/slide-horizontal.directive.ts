@@ -63,7 +63,7 @@ export class HorizontalSlideDirective implements AfterViewInit, OnDestroy {
     const options = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.2,
+      threshold: 0.25, // The element has to be at least 25% visible
     };
 
     this.ngZone.runOutsideAngular(() => {

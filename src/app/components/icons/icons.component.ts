@@ -14,6 +14,7 @@ import {
   ionNotificationsOutline,
 } from '@ng-icons/ionicons';
 import { heroArrowDownTray } from '@ng-icons/heroicons/outline';
+import { ClickAnimateDirective } from '../../directives/click-animation.directive';
 
 type IIcon =
   | 'matArrowForwardIos'
@@ -30,7 +31,7 @@ type IIcon =
 @Component({
   selector: 'app-icons',
   standalone: true,
-  imports: [NgIconComponent],
+  imports: [NgIconComponent, ClickAnimateDirective],
   viewProviders: [
     provideIcons({
       matArrowForwardIos,

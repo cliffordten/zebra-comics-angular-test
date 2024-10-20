@@ -21,9 +21,11 @@
                 </button>
             </div>
         </div>
-        <app-section-container iconContainerClass="height-21rem" [leftIcon]="true">
+        <app-section-container iconContainerClass="height-21rem" [leftIcon]="true" [shouldAnimate]="true"
+            slideLength="15rem">
             @for (book of zebraKids; track $index) {
-            <app-book-item [bookItem]="book" bookItemType="START_HERE" bookContainerClass="width-14rem height-21rem" />
+            <app-book-item [bookItem]="book" class="slider-item" bookItemType="START_HERE"
+                bookContainerClass="width-14rem height-21rem" />
             }
         </app-section-container>
     </div>
