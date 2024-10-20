@@ -1,12 +1,21 @@
-<div class="container">
-    <div class="grid-container gap-25rem pt-3rem">
+<div>
+    <div class="grid-container gap-25rem pt-3rem width-full">
         <div class="flex flex-col items-center justify-center">
             <div>
-                <h1 class="font-2rem pb-25rem bold">Zebra Kids</h1>
-                <p class="font-1rem pb-1rem line-height text-grey">Something Original Another statement here And a
+                <div class="flex items-center width-full justify-between">
+                    <h1 class="font-2rem pb-25rem bold">Zebra Kids</h1>
+
+                    <button
+                        class="show-mobile flex items-center justify-center gap-75rem bg-white rounded-1rem text-black font-75rem px-125rem py-50rem">Explore
+                        All
+                        <app-icons name="matArrowForwardIos" color="black" />
+                    </button>
+                </div>
+                <p class="mobile-margin font-1rem pb-1rem line-height text-grey">Something Original Another statement
+                    here And a
                     concluding statement here</p>
                 <button
-                    class="flex items-center justify-center gap-75rem bg-white rounded-1rem text-black font-75rem px-125rem py-50rem">Explore
+                    class="hide-mobile flex items-center justify-center gap-75rem bg-white rounded-1rem text-black font-75rem px-125rem py-50rem">Explore
                     All
                     <app-icons name="matArrowForwardIos" color="black" />
                 </button>

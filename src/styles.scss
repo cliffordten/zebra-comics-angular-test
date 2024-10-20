@@ -6,3 +6,51 @@
 app-icons {
   line-height: 0;
 }
+
+::-webkit-scrollbar {
+  height: 0.2rem;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 2rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #272727;
+  border-radius: 2rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #272727;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #313131 transparent;
+}
+
+body {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+@media (min-width: 53.75rem) {
+  .show-mobile {
+    display: none;
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+  }
+}
+
+@media (max-width: 53.75rem) {
+  .hide-mobile {
+    display: none;
+  }
+
+  .overflow-horizontal {
+    padding-bottom: 1rem;
+  }
+}

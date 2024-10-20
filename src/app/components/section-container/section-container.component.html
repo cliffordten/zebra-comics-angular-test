@@ -5,14 +5,14 @@
     <div class="flex gap-1rem relative">
         @if(leftIcon()){
         <div
-            [ngClass]="['cursor-pointer p-50rem flex items-center height-full absolute -left-3rem', iconContainerClass()]">
+            [ngClass]="['cursor-pointer p-50rem flex items-center hide-mobile height-full absolute -left-3rem', iconContainerClass()]">
             <app-icons name="matArrowBackIos" />
         </div>
         }
         <div class="flex gap-1rem items-center overflow-horizontal">
             <ng-content />
         </div>
-        <div [ngClass]="['cursor-pointer p-50rem flex items-center', iconContainerClass()]">
+        <div [ngClass]="['cursor-pointer hide-mobile p-50rem flex items-center', iconContainerClass()]">
             <app-icons name="matArrowForwardIos" />
         </div>
     </div>

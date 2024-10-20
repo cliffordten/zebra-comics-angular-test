@@ -1,4 +1,17 @@
 .grid-container {
   display: grid;
-  grid-template-columns: 17rem 48.625rem;
+  grid-template-columns: 17rem minmax(0, 1fr);
+  gap: 2rem;
+  width: 100%;
+  max-width: 100vw;
+}
+
+@media (max-width: 53.75rem) {
+  .grid-container {
+    display: block;
+  }
+
+  .mobile-margin {
+    margin-bottom: 1rem;
+  }
 }
