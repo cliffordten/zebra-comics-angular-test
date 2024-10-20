@@ -60,15 +60,17 @@ export class HorizontalSlideDirective implements AfterViewInit, OnDestroy {
   }
 
   private setupIntersectionObserver() {
+    const isMobile = window.innerWidth <= 768;
     const options = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.25, // The element has to be at least 25% visible
+      threshold: isMobile ? 0 : 0.25, // The element has to be at least 25% visible for non mobile devices and 0% visible for mobile devices
     };
 
     this.ngZone.runOutsideAngular(() => {
       this.observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
+          console.log('Entry', entry); // Check if this logs on mobile
           if (entry.isIntersecting && !this.hasAnimated) {
             this.ngZone.run(() => this.animateElement());
             this.observer?.unobserve(entry.target);
