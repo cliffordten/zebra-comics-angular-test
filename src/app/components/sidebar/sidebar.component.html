@@ -1,0 +1,10 @@
+<div class="sidebar-container">
+    <div class="hamburger" [class.open]="isOpen" (click)="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div [ngClass]="['sidebar', isOpen ? 'with-box-shadow' : '']" [@sidebarState]="isOpen ? 'open' : 'closed'">
+        <ng-content />
+    </div>
+</div>
