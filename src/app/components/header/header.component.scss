@@ -49,3 +49,19 @@ ul {
     background-position: 0 0;
   }
 }
+
+@media (min-width: 53.75rem) {
+  .show-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 53.75rem) {
+  .hide-mobile {
+    display: none;
+  }
+
+  .user-profile {
+    background: #404040;
+  }
+}

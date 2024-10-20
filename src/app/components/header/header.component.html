@@ -3,21 +3,40 @@
         <img routerLink="/" src="/logo.png" alt="zebra comics logo" class="height-4rem">
         <div class="flex gap-2rem items-center justify-between width-full">
             <div class="flex gap-2rem items-center">
-                <h1 class="font-1rem text-primary" routerLink="/">Zebra Comics</h1>
-                <ul class="flex gap-2rem items-center">
+                <h1 class="font-1rem text-primary hide-mobile" routerLink="/">Zebra Comics</h1>
+                <ul class="flex gap-2rem items-center hide-mobile">
                     <li routerLink="/discover">Discover</li>
                     <li routerLink="/library">Library</li>
                 </ul>
             </div>
             <div class="flex gap-1rem items-center">
-                <div class="flex items-center gap-1rem user-profile">
+                <div class="flex items-center gap-1rem user-profile hide-mobile">
                     <p>James Bond</p>
-                    <!-- <img src="https://avatar.iran.liara.run/public/" alt="James Bond" width="40px" class="rounded-1"> -->
                     <img src="https://xsgames.co/randomusers/avatar.php?g=male" alt="James Bond" width="35px">
                 </div>
                 <button class="subscribe">
                     upgrade to premium
                 </button>
+                <app-sidebar class="show-mobile">
+                    <div class="mt-1rem">
+                        <div class="flex flex-col gap-75rem">
+                            <div class="flex gap-1rem items-center">
+                                <img routerLink="/" src="/logo.png" alt="zebra comics logo" class="height-4rem">
+                                <h1 class="font-1rem text-primary" routerLink="/">Zebra Comics</h1>
+                            </div>
+                            <ul class="flex flex-col gap-75rem mt-2rem mb-4rem">
+                                <li class="bg-dark-dim py-75rem px-1rem rounded-1rem" routerLink="/discover">Discover
+                                </li>
+                                <li class="bg-dark-dim py-75rem px-1rem rounded-1rem" routerLink="/library">Library</li>
+                            </ul>
+                        </div>
+                        <div class="flex items-center gap-1rem user-profile width-fit">
+                            <p class="text-ellipsis max-width-12rem">James Bond</p>
+                            <img src="https://xsgames.co/randomusers/avatar.php?g=male" alt="James Bond" width="35px">
+                        </div>
+                    </div>
+                </app-sidebar>
+
             </div>
         </div>
     </div>
