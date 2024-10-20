@@ -6,6 +6,7 @@ import { IBook, ITrending } from '../../models/books';
 import { ZebraKidsComponent } from '../../components/zebra-kids/zebra-kids.component';
 import { TrendingItemComponent } from '../../components/trending-item/trending-item.component';
 import { InfiniteSliderDirective } from '../../directives/slider.directive';
+import { HorizontalSlideDirective } from '../../directives/slide-horizontal.directive';
 
 @Component({
   selector: 'app-home',
@@ -17,6 +18,7 @@ import { InfiniteSliderDirective } from '../../directives/slider.directive';
     ZebraKidsComponent,
     TrendingItemComponent,
     InfiniteSliderDirective,
+    HorizontalSlideDirective,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',

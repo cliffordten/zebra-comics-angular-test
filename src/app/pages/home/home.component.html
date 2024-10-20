@@ -1,7 +1,7 @@
-<section>
+<section slideHorizontal>
     <app-hero />
 </section>
-<section class="container">
+<section slideHorizontal class="container">
     <app-section-container heading="Last Read" iconContainerClass="height-7rem" [shouldAnimate]="true"
         slideLength="11rem">
         @for (book of lastRead; track $index) {
@@ -9,24 +9,24 @@
         }
     </app-section-container>
 </section>
-<section class="container">
+<section slideHorizontal class="container">
     <app-section-container heading="Start Here" iconContainerClass="height-18rem">
         @for (book of startHere; track $index) {
         <app-book-item [bookItem]="book" bookItemType="START_HERE" />
         }
     </app-section-container>
 </section>
-<section class="container">
+<section slideHorizontal class="container">
     <app-zebra-kids />
 </section>
-<section class="container">
+<section slideHorizontal class="container">
     <app-section-container heading="Zebra Original" iconContainerClass="height-22rem" [leftIcon]="true">
         @for (book of startHere; track $index) {
         <app-book-item [bookItem]="book" bookItemType="START_HERE" bookContainerClass="width-15rem height-22rem" />
         }
     </app-section-container>
 </section>
-<section class="container">
+<section slideHorizontal class="container">
     <app-section-container heading="Trending Today" iconContainerClass="height-22rem">
         @for (trendingItem of trendingToday; track $index) {
         <app-trending-item [bookItem]="trendingItem.book" [episode]="trendingItem.episode"
